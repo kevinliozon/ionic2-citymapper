@@ -11,10 +11,25 @@
     <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
       <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+      Direct Link to my worplace
+      <a href="https://citymapper.com/go/c6a384" target="_blank">GO</a>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ionic" item-left></ion-icon>
+      <h3>Button to my worplace via system browser</h3>
+      <button ion-button clear (click)="systemBrowserLink()">GO</button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ionic" item-left></ion-icon>
+      <h3>Button to my worplace via app</h3>
+      <button ion-button clear (click)="inAppLink()">GO</button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="ionic" item-left></ion-icon>
+      <h3>Button to my worplace via app without URL</h3>
+      <button ion-button clear (click)="inAppLinkNoUrl()">GO</button>
     </ion-item>
   </ion-list>
 
-  <h2>I work here</h2>
-  <a href="https://citymapper.com/go/c6a384" target="_blank">go</a>
+
 </ion-content>
